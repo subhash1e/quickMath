@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="251dp"
+        android:layout_marginTop="88dp"
+        android:text="QuickMath"
+        android:textAlignment="center"
+        android:textColor="#E91E63"
+        android:textSize="48sp"
+        android:textStyle="bold"
+
+         />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+            <TextView
+                android:id="@+id/tvChooseAlgo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose any"
+                android:textSize="24sp"
+                android:paddingLeft="10dp"
+               />
+
+            <RadioGroup
+                android:layout_margin="10dp"
+                android:id="@+id/rgAlgo"
+                android:layout_width="159dp"
+                android:layout_height="144dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/radioGroup2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+                <RadioButton
+                    android:checked="true"
+                    android:id="@+id/rbAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Addition" />
+
+                <RadioButton
+                    android:id="@+id/rbSubtract"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Subtraction" />
+
+                <RadioButton
+                    android:id="@+id/rbMultiply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Multiplication" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        android:layout_margin="20dp">
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Difficulty"
+                android:textSize="24sp"
+               android:paddingLeft="15dp"
+                />
+
+            <RadioGroup
+                android:id="@+id/rgDifficulty"
+                android:layout_margin="10dp"
+                android:layout_width="159dp"
+                android:layout_height="144dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/radioGroup2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+                <RadioButton
+                    android:checked="true"
+                    android:id="@+id/rblevel1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Level 1" />
+
+                <RadioButton
+                    android:id="@+id/rblevel2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Level 2" />
+
+                <RadioButton
+                    android:id="@+id/rblevel3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Level 3" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:shadowColor="@color/black"
+        android:shadowRadius="10"
+        android:shadowDy="50"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTintMode="screen"
+        android:text="Start"
+        android:layout_gravity ="center_horizontal"/>
+
+
+</LinearLayout>
