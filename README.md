@@ -3,7 +3,7 @@
 "math game , with timer and score, using kotlin "
 
 # downloads
--
+- https://github.com/subhash1e/quickMath/releases/download/v1.0.0/app-debug.apk
 
 # screenshots
 
